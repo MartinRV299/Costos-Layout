@@ -1,0 +1,5 @@
+
+#Options All -Indexes
+#ErrorDocument 404 /index.php
+RewriteEngine on
+RewriteRule ^([0-9a-zA-Z-/]+)$ index.php?action=$1

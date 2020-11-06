@@ -1,0 +1,121 @@
+*{   /* UTILIZO PARA RESTABLECER TODO Y PINTAR DE NUEVO*/
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.icono-encabezado-conciliacion{  /* ESTIQUETA SE UTILIZA PARA EL STYLE DE EL ICONO QUE SE ENCUENTRA NE SUPERIROR IZQUIERDO*/
+ background: rgb(14, 124, 155);
+ /* background: #00a65a;*/
+  color:white;
+  border: 1px solid #E1e9FA;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,.8);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,.8);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,.8);
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 30px;
+  margin-left: 10px;
+  opacity: .90;
+  text-align: center;
+  width:56.6px;
+}
+.icono-costos{  /* ESTIQUETA SE UTILIZA PARA EL STYLE DE EL ICONO QUE SE ENCUENTRA NE SUPERIROR IZQUIERDO*/
+  background: rgb(14, 155, 113);
+  /* background: #00a65a;*/
+   color:white;
+   border: 1px solid #E1e9FA;
+   -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,.8);
+   -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,.8);
+   box-shadow: 0px 0px 10px 0px rgba(0,0,0,.8);
+   border-radius: 8px;
+   padding: 10px;
+   font-size: 30px;
+   margin-left: 10px;
+   opacity: .90;
+   text-align: center;
+   width:56.6px;
+ }
+.inputBorder:hover /* CON ESTA ETIQUETA UTILIZO PARA PONER EL SOBREADO AL ASERCAR EL MAUSE*/
+{
+    /*border: .1px solid rgb(131, 168, 224) ;*/
+    border: .1px solid#00a65a !important;
+    border-right-width: .5em !important;
+    
+}
+.rowColor:hover{ /*ETIQUETA QUE SE UTILIZA  PARA LA PUNTAR LAS FILAS  DE COLOR*/
+  background:#D8D8D8;
+
+  
+    color:rgb(145, 145, 145);
+    margin-left:2px;
+    margin-right:2px;
+    padding-bottom:5px;
+    
+  }
+  
+.rowColor{ /* ETIQUETA UTILIZO PARA PINTAR LAS FILAS EM  SIN NECESIDAD DE PONER EL PUNTERO*/
+  
+    background:#FFF;
+    margin-left:2px;
+    margin-right:2px;
+    padding-bottom:5px;
+  }
+  .text{  /*ETIQUETA QUE UTILIZO PARA LA ANIMACION DE LA LETRAS  */
+    font-style: italic;
+    text-align: center;
+    font-size: 25px;
+    color: #7e7979;
+    -webkit-text-stroke: .4px #7e7979;
+   /* font-weight: bold;*/
+    animation: textanimatio 1s ease-in-out;
+
+  }
+  @keyframes textanimatio {
+      20%{
+          letter-spacing: 50px;
+        }
+      50% {
+          letter-spacing: 1px;
+          }
+  }
+  .filas{
+    background:#F6EAEA;
+    border: .1px solid#A4A4A4;
+
+  }
+  .infocolor{ /*ETIQUETA QUE SE UTILIZA PARA PINTR LOS CUADROS DE LOS ICONOS DE CADA UNO DE LOS INPUT */
+    background: #00a65a !important;
+    color: #FFF;
+
+  }
+  .EncabezadoTable{  /*ETIQUETA PAR EL ENCABEZADO DE LAS TABLAS PARA PERSONAL AUTORIZADO*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+.EncabezadoTable{
+    background: #00a65a;
+    color: #fff;
+  }
+  .SubInput{
+    border-radius: 0px;
+    border-color: #00a65a;
+    background-color: #fff;
+}
+.borderGreen{
+  
+  border-color: #00a65a !important;
+  color: black;
+}
+.box.box-info {
+  border-top-color: #00C0EF ;
+}
+.btnn{
+    
+  border-bottom: 1px solid #00a65a !important;
+}
+  
+
+
+

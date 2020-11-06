@@ -1,0 +1,291 @@
+
+.slideCrow{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow:hidden;
+    background:white;
+}
+
+.slideCrow ul li{
+    float: left;
+    width: 100%;
+    display:none;
+}
+
+.slideCrow ul li:first-child{
+    display:block;
+}
+
+.slideCrow ul li img{
+    width: 100%;
+    vertical-align: top;
+}
+
+
+.slideCrow ul li .slideCrowCaption{
+    position: absolute;
+    width:100%;
+    bottom: 0px;
+    text-align:center;
+    z-index: 1;
+    color:white;
+    background: rgba(0,0,0,.6);
+}
+
+.slideCrowCaption h3{
+    padding-top:10px;
+}
+
+.slideCrowCaption p{
+    padding-bottom:30px;
+}
+        
+/*Indicadores Slide*/
+
+.indicadoresSlideCrow{
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    bottom: 0px;
+    text-align: center;
+    z-index: 2;
+}
+
+.indicadoresSlideCrow li{
+    display:inline-block;
+    margin:0px 5px;
+    cursor: pointer;
+    opacity: .5;
+    color: white;    
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.indicadoresSlideCrow li:first-child{
+    opacity: 1;
+    font-size: 20px;
+    text-shadow: -2px -2px 7px #f80, 2px -2px 7px #f80, -2px 2px 7px #f80, 2px 2px 7px #f80;
+}
+
+.slideCrow .slideCrowIzq span{
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    top: calc(40% - 40px);
+    left:50px;
+    text-shadow: -2px -2px 7px #f80, 2px -2px 7px #f80, -2px 2px 7px #f80, 2px 2px 7px #f80;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.slideCrow .slideCrowDer span{
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    top: calc(40% - 40px);
+    right:50px;
+    text-shadow: -2px -2px 7px #f80, 2px -2px 7px #f80, -2px 2px 7px #f80, 2px 2px 7px #f80;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+/*********************************************** GESTOR ***************************************************************************/
+
+.gestorSlideCrow{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.gestorSlideCrow ul{
+	padding: 0px 10px;
+    border:2px dashed #999;
+    margin-bottom: 15px;
+}
+
+.gestorSlideCrow ul li span.eliminarItemSlide{
+	position:absolute;
+	top: 2px;
+	right: 6px;
+	cursor:pointer;
+	width:30px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	background:white;
+	z-index:1;
+	color:white;
+    background: red;
+    opacity: .6;
+    font-size: 25px;
+}
+
+.gestorSlideCrow ul li span.editarItemSlide{
+	position:absolute;
+	top: 2px;
+	right: 36px;
+	cursor:pointer;
+	width:30px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	background:white;
+	z-index:1;
+	color:white;
+    background: blue;
+    opacity: .6;
+    font-size: 25px;
+}
+
+.gestorSlideCrow ul li span.posicionSlide{
+	position:absolute;
+	top: 2px;
+	left: 2px;
+	cursor:pointer;
+	width:30px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	background:white;
+	z-index:1;
+	color:white;
+    background: green;
+    font-size: 25px;
+}
+
+
+
+
+.gestorSlideCrow ul li{
+    position: relative;
+    width:31%;
+    overflow:hidden;
+    display:inline-block;
+    margin:10px 1%;
+}
+
+.gestorSlideCrow ul li img{
+    width:calc(100% - 4px);
+    border:2px solid black;
+}
+
+.gestorSlideCrow .encabezadoGestorSlide{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.statusCrow{
+    display: block;
+    margin: auto;
+}
+
+.warningCrow{
+    background: red;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+
+/*********************************************** EDITAR***************************************************************************/
+.contenedorEditar{
+    width: 95%;
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.contenedorEditar img{
+    width: 100%;
+    margin-bottom: 10px;
+    border: 2px solid #999;
+}
+
+.contenedorEditar .formulario{
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+.contenedorEditar textarea{
+    max-height: 200px;
+    min-height: 50px;
+    border: 10px solid #999;
+    resize: vertical;
+}
+
+/*********************************************** BOTONES***************************************************************************/
+
+/*.botonClase{
+    font-family:"Roboto", Arial, Helvetica, sans-serif;
+    padding: 5px;
+    border: 2px solid #999;
+    border-radius:5px;
+    background:#005F8D;
+    color:#E1e9FA;
+    cursor: pointer;
+    -webkit-transition-duration: 0.6s; 
+    transition-duration: 0.6s;
+    position: relative;
+    width: 110px;
+    height: 35px;
+    box-shadow: 0px 2px 10px 2px #000,inset 0 20px 15px -5px rgba(255,255,255,.4);
+    -webkit-box-shadow:  0px 2px 10px 2px #000,inset 0 20px 15px -5px rgba(255,255,255,.4);
+}
+
+.botonClase:hover{
+    background:#9E6800;
+}*/
+
+.botonDesactivado{
+    display: none;
+}
+
+
+
+/********************************************************************MODAL*******************************/
+
+.modalSlideCrow { /*contenedor padre*/
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,.95);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5000;
+  }
+  
+  .canvasSlideCrow {/*contenedor imagen */
+      position: relative;
+      width: 60%;
+      max-width: 800px;
+      min-width: 400px;
+      border:2px dashed #999;
+  }
+  
+  .modal__botonSlideCrow  {
+    background-image: url(../img/eliminar.png);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 39px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: monospace;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+  }

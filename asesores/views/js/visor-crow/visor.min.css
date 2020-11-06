@@ -1,0 +1,146 @@
+.modal-crow {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .9);
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9000
+}
+
+.canvas-crow {
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+    border: 2px solid #000;
+}
+
+.canvas-crow-slide {
+    position: relative;
+    width: 90%;
+    max-width: 1024px;
+    border: 2px solid #000;
+}
+
+.modal__img-crow {
+    width: 100%;
+    position: relative;
+    vertical-align: top;
+    border: 8px solid #fff;
+    border-top-left-radius: 4px;
+    box-shadow: 0 2px 15px 2px #000;
+    -webkit-box-shadow: 0 2px 15px 2px #000;
+}
+
+.modal__boton-crow {
+    background-image: url(imagenes/eliminar.png);
+    background-repeat: no-repeat;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    cursor: pointer;
+}
+
+
+.modal__boton-crow2 {
+    background-image: url(imagenes/nutri-mini2.png);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: 0px;
+}
+
+
+.descripcionCrow {
+    width: 100%;
+    background: rgba(0, 0, 0, .7);
+    padding: 8px;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+
+.descripcionCrow2 {
+    width: 100%;
+    padding: 8px;
+    position: absolute;
+    color: #000;
+    background: #fff;
+    text-align: justify;
+    letter-spacing: 1px;
+    z-index:-1;
+}
+
+.izquierda-crow {
+    background-image: url(imagenes/anterior.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 45px;
+    top: calc(50% - 22.5px);
+    left: 10px;
+    cursor: pointer;
+    opacity: .3;
+}
+
+.derecha-crow {
+    background-image: url(imagenes/siguiente.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 45px;
+    top: calc(50% - 22.5px);
+    right: 10px;
+    cursor: pointer;
+    opacity: .3;
+}
+
+.derecha-crow:hover,
+.izquierda-crow:hover {
+    opacity: 1;
+}
+
+.paginacionCrow {
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    color: #fff;
+    left: 0;
+    top: -20px;
+}
+
+.precarga-crow {
+    background: transparent url(imagenes/update.gif) center no-repeat;
+}
+
+@media screen and (orientation:portrait) {
+    .descripcionCrow {
+        background: rgba(0, 0, 0, 1);
+        position: static;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        box-shadow: 0 2px 15px 2px #000;
+        -webkit-box-shadow: 0 2px 15px 2px #000;
+    }
+    .izquierda-crow,
+    .derecha-crow {
+        top: calc(50% - 80px);
+    }
+}
+
+.videos-crow{
+    border-top: 4px solid orange;
+    border-bottom: 4px solid orange;
+    border-radius: 12px;
+}

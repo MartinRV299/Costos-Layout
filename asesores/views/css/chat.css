@@ -1,0 +1,199 @@
+body{
+    background-image: url("../img/boxed-bg.jpg");
+}
+
+.contadorMensaje{
+    display:inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 14px;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    background: #00a65a;
+    border:1px solid #fff;
+    margin-right:20px;
+}
+
+.conversandoCon{
+    background:#eee;
+    margin-bottom: -5px;
+    padding-top: 8px;
+    padding-left: 5px;
+    padding-bottom: 1px;
+    border: 1px solid #3c8dbc;
+    border-bottom: 4px solid #3c8d8c;
+    -webkit-box-shadow: 0px 4px 15px 2px rgba(0,0,0,0.50);
+    -moz-box-shadow: 0px 4px 15px 2px rgba(0,0,0,0.50);
+    box-shadow: 0px 4px 15px 2px rgba(0,0,0,0.50);
+}
+
+.claseOverChat:hover{
+    background: #0f1416;
+}
+
+.tamanoChat{
+    max-width: 1280px;
+    min-width: 320px;
+    margin: auto;
+}
+
+.direct-chat-contacts{
+    height: calc(100vh - 228px);
+}
+
+.direct-chat-messages{
+    height: calc(100vh - 228px);
+}
+
+
+.globoMarcador{
+        position: absolute;
+        top: -4px;
+        right: -4px;
+        font-size: 10px;
+        font-weight: 400;
+}
+
+.iconoMarcador {
+    position: relative;
+}
+
+.buscadorChat{
+    padding:20px;
+    position:sticky;
+    top:45px;
+    background:#222d32;
+}
+
+.nav-tabs-custom>.tab-content {
+    background:#222d32;
+}
+
+.nav-tabs-custom>.nav-tabs>li.active>a, .nav-tabs-custom>.nav-tabs>li.active:hover>a {
+    background:#222d32;
+    color: #fff;
+    border-bottom-color: #222d32;
+}
+
+.nav-tabs-custom>.nav-tabs>li>a {
+    background:#222d32;
+    border-bottom-color: #000;
+    color: #fff;
+    margin-bottom: 1px;
+}
+
+.nav-tabs-custom>.nav-tabs>li>a:hover {
+   border-bottom-color: #000;
+}
+
+
+.nav-tabs-custom {
+    margin-bottom: 20px;
+    background:#222d32;
+    border-radius: 3px;
+}
+
+.nav-tabs-custom>.nav-tabs {
+    border-bottom-color: #000;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.nav-tabs-custom>.nav-tabs>li.active>a {
+    border-top-color: transparent;
+    border-left-color: #000;
+    border-right-color: #000;
+}
+
+
+/* Customize the label (the container) */
+.container_chat {
+    /*display: block;*/
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #E57E10;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container_chat input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark_chat {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: #E57E10;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container_chat:hover input ~ .checkmark_chat {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container_chat input:checked ~ .checkmark_chat {
+    background-color: #E57E10;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark_chat:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container_chat input:checked ~ .checkmark_chat:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container_chat .checkmark_chat:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+
+
+@media screen and (min-width: 900px) {
+
+    .direct-chat-contacts{
+        width: 50%;
+        right: 0;
+    }
+
+    .direct-chat-messages{
+        width: 50%;
+    }
+
+    .ocultarUsuariosSlide{
+        display: none;
+    }
+  
+  }
+  
